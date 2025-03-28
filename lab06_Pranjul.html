@@ -195,7 +195,12 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
-<p><a href="Figures/qus1.svg">Salary Distribution</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/qus1.svg" class="img-fluid figure-img"></p>
+<figcaption>Salary Distribution</figcaption>
+</figure>
+</div>
 <section id="this-chart-shows-how-salaries-vary-based-on-job-type.-people-working-full-time-32-hours-a-week-usually-earn-more-and-have-a-bigger-range-of-salaries-including-some-very-high-ones." class="level5" data-number="1.0.0.0.1">
 <h5 data-number="1.0.0.0.1" class="anchored" data-anchor-id="this-chart-shows-how-salaries-vary-based-on-job-type.-people-working-full-time-32-hours-a-week-usually-earn-more-and-have-a-bigger-range-of-salaries-including-some-very-high-ones."><span class="header-section-number">1.0.0.0.1</span> This chart shows how salaries vary based on job type. People working full-time (&gt; 32 hours a week) usually earn more and have a bigger range of salaries, including some very high ones.</h5>
 </section>
@@ -316,6 +321,12 @@ only showing top 20 rows
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/qus2.svg" class="img-fluid figure-img"></p>
+<figcaption>Salary Distribution</figcaption>
+</figure>
+</div>
 <p>This chart compares salary ranges across three major industries. The Information industry tends to offer the highest salaries, with a wider spread and more high-paying roles. Finance and Insurance shows slightly lower median salaries, but still competitive. Meanwhile, Health Care and Social Assistance generally offers the lowest pay among the three, though it still has some high-salary outliers.</p>
 </section>
 <section id="job-posting-trends-over-time" class="level1" data-number="3">
@@ -337,7 +348,7 @@ only showing top 20 rows
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-14" class="cell" data-execution_count="6">
+<div id="cell-15" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Filtering and grouping job postings by date</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> glob</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>job_post_df <span class="op">=</span> (</span>
@@ -385,6 +396,12 @@ only showing top 20 rows
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/qus3.svg" class="img-fluid figure-img"></p>
+<figcaption>Salary Distribution</figcaption>
+</figure>
+</div>
 <p>This line graph shows how the number of job postings changed from May to October 2024. While the overall trend stays fairly consistent, there are regular ups and downs—suggesting that job postings spike on certain days or weeks, then dip right after. It could reflect typical hiring cycles or patterns like jobs being posted more often early in the week.</p>
 </section>
 <section id="top-10-job-titles-by-count" class="level1" data-number="4">
@@ -407,7 +424,7 @@ only showing top 20 rows
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-17" class="cell" data-execution_count="7">
+<div id="cell-19" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Your code for 4th question here</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#finding the top 10 jobs</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>job_title <span class="op">=</span> df.<span class="bu">filter</span>(col(<span class="st">"TITLE_NAME"</span>).isNotNull()) <span class="op">\</span></span>
@@ -437,7 +454,7 @@ only showing top 20 rows
 </code></pre>
 </div>
 </div>
-<div id="cell-18" class="cell" data-execution_count="8">
+<div id="cell-20" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>top_10_jobs.write.mode(<span class="st">"overwrite"</span>).option(<span class="st">"header"</span>, <span class="va">True</span>).csv(<span class="st">"top_10_jobs"</span>)</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>files <span class="op">=</span> glob.glob(<span class="st">"top_10_jobs/part-*.csv"</span>)</span>
@@ -478,6 +495,12 @@ only showing top 20 rows
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/qus4.svg" class="img-fluid figure-img"></p>
+<figcaption>Salary Distribution</figcaption>
+</figure>
+</div>
 <p>This bar chart shows the top 10 most in-demand job titles based on the number of postings. Data Analysts dominate the chart by a wide margin, indicating very high demand. The rest—including roles like Business Intelligence Analysts, Enterprise Architects, and Oracle Cloud HCM Consultants—have significantly fewer postings, showing that while specialized roles are needed, generalist data positions are currently leading the job market.</p>
 </section>
 <section id="remote-vs-on-site-job-postings" class="level1" data-number="5">
@@ -499,7 +522,7 @@ only showing top 20 rows
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-21" class="cell" data-execution_count="9">
+<div id="cell-24" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Your code for 5th question here</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>remote_jobs <span class="op">=</span> df.<span class="bu">filter</span>(col(<span class="st">"REMOTE_TYPE_NAME"</span>).isNotNull()) <span class="op">\</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>                .groupBy(<span class="st">"REMOTE_TYPE_NAME"</span>) <span class="op">\</span></span>
@@ -521,7 +544,7 @@ only showing top 20 rows
 </code></pre>
 </div>
 </div>
-<div id="cell-22" class="cell" data-execution_count="10">
+<div id="cell-25" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>remote_jobs.write.mode(<span class="st">"overwrite"</span>).option(<span class="st">"header"</span>, <span class="va">True</span>).csv(<span class="st">"remote_jobs"</span>)</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>files <span class="op">=</span> glob.glob(<span class="st">"remote_jobs/part-*.csv"</span>)</span>
@@ -557,6 +580,12 @@ only showing top 20 rows
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/qus5.svg" class="img-fluid figure-img"></p>
+<figcaption>Salary Distribution</figcaption>
+</figure>
+</div>
 <p>This donut chart shows how job postings are split between remote, hybrid, and on-site work types. A huge chunk (78.1%) of the postings don’t specify the work type, which could mean missing or incomplete data. Among the rest, remote jobs make up 17.2%, while hybrid and on-site (not remote) roles are much less common at just over 3% and 1.5% respectively. So, while remote work is present, transparency in job type still has room for improvement.</p>
 </section>
 <section id="skill-demand-analysis-by-industry-stacked-bar-chart" class="level1" data-number="6">
@@ -580,7 +609,7 @@ only showing top 20 rows
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-25" class="cell" data-execution_count="11">
+<div id="cell-29" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyspark.sql.functions <span class="im">import</span> col, split, explode, trim, count</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>skills_df <span class="op">=</span> df.<span class="bu">filter</span>(col(<span class="st">"SKILLS_NAME"</span>).isNotNull()) <span class="op">\</span></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>              .withColumn(<span class="st">"SKILL"</span>, explode(split(col(<span class="st">"SKILLS_NAME"</span>), <span class="st">","</span>))) <span class="op">\</span></span>
@@ -628,7 +657,7 @@ only showing top 20 rows
 <span id="cb28-45"><a href="#cb28-45" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb28-46"><a href="#cb28-46" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-47"><a href="#cb28-47" aria-hidden="true" tabindex="-1"></a>fig.show()</span>
-<span id="cb28-48"><a href="#cb28-48" aria-hidden="true" tabindex="-1"></a>fig.write_image(<span class="st">"Figures/qus6.svg"</span>)</span>
+<span id="cb28-48"><a href="#cb28-48" aria-hidden="true" tabindex="-1"></a>fig.write_image(<span class="st">"Figures/qus6.svg"</span>, width<span class="op">=</span><span class="dv">1000</span>, height<span class="op">=</span><span class="dv">600</span>)</span>
 <span id="cb28-49"><a href="#cb28-49" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>                                                                                </code></pre>
@@ -636,6 +665,12 @@ only showing top 20 rows
 <div class="cell-output cell-output-display">
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/qus6.svg" class="img-fluid figure-img"></p>
+<figcaption>Salary Distribution</figcaption>
+</figure>
 </div>
 <p>This stacked bar chart displays the top ten most in-demand skills across the top ten industries, as determined by job posting data. Each bar denotes an industry, and the colored portions indicate how often each skill appears in job postings within that area. For example, Professional, Scientific, and Technical Services has the highest overall need, particularly for skills such as communication, SQL, and project management. The chart clearly shows which skills are in high demand in various areas, as well as where job searchers with those skills might find competition or opportunities.</p>
 </section>
@@ -659,7 +694,7 @@ only showing top 20 rows
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-28" class="cell" data-execution_count="12">
+<div id="cell-33" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyspark.sql.functions <span class="im">import</span> col</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
@@ -717,6 +752,12 @@ only showing top 20 rows
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/qus7.svg" class="img-fluid figure-img"></p>
+<figcaption>Salary Distribution</figcaption>
+</figure>
+</div>
 <p>This bubble chart was meant to compare salaries across different job roles, but it currently shows only one bubble. That means only one ONET occupation — in this case, Business Intelligence Analysts — had both salary data and enough records to calculate a reliable median salary.</p>
 <p>The chart still gives us one key insight: this role has a median salary around $87,295, and a significant number of job postings. However, the lack of other bubbles suggests either:</p>
 <ol type="1">
@@ -744,7 +785,7 @@ only showing top 20 rows
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-31" class="cell" data-execution_count="13">
+<div id="cell-37" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Your code for 8th question here</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -798,6 +839,12 @@ only showing top 20 rows
 <div class="cell-output cell-output-display">
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/qus8.svg" class="img-fluid figure-img"></p>
+<figcaption>Salary Distribution</figcaption>
+</figure>
 </div>
 <p>This Sankey diagram displays a clear job transition&nbsp;flow from “Computer and Mathematical Occupations” (the larger category) to “Mathematical Science Occupations” (a more narrow role group). The relationship suggests a high volume of job posts for this career, implying that math-focused professions are a prominent specialization within the larger tech and data area.</p>
 </section>
