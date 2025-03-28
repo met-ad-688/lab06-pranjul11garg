@@ -170,3 +170,16 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 data/lightcast_job_postings.csv
+venv
+lightcast_data.csv
+
+top_10_jobs
+remote_jobs
+job_posts
+filtered_salary_data
+iframe_figures
+industry_salaries
+industry_skills
+output
+data
+
